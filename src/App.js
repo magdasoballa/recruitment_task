@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './styles/main.scss'
+import {Keypad} from './components/Keypad'
+import {Result} from "./components/Result";
+import './styles/main.scss'
+import {CalculatorContextProvider} from "./context/CalculatorContext";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    return (
+        <div className='app-wrapper'>
+            <div className="calculator-wrapper">
+                <CalculatorContextProvider>
+                <Result/>
+                <Keypad/>
+                </CalculatorContextProvider>
+            </div>
+        </div>
+    );
 }
 
 export default App;

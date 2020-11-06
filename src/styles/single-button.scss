@@ -1,0 +1,68 @@
+@import 'colors/global-colors';
+
+
+.button-wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  flex: 1;
+  border: none;
+  color: darkslategray;
+}
+
+.row {
+  button {
+    &:nth-of-type(1) {
+      background-color: $color-button-number-bg;
+    }
+
+    &:nth-of-type(2) {
+      background-color: $color-button-second-number-bg;
+    }
+
+    &:nth-of-type(3):not(.equal) {
+      background-color: $color-button-third-number-bg;
+    }
+    &:active{
+      filter: brightness(1.5);
+    }
+  }
+
+
+  &:nth-of-type(1) {
+    button {
+      &:nth-of-type(1) {
+        background-color: $color-button-operation-bg;
+      }
+
+      &:nth-of-type(2) {
+        background-color: $color-button-second-operation-bg;
+      }
+
+      &:nth-of-type(3) {
+        background-color: $color-button-third-operation-bg;
+      }
+    }
+  }
+}
+
+.math-sign {
+  background-color: $color-operations-btn;
+  color: #fff;
+  border-bottom: 1px solid #7442B3;;
+}
+
+.equal {
+  flex: 2;
+  background-color: $color-equal-btn;
+  color: white;
+  outline: none;
+}
+
+.light-on-hover:hover {
+  filter: brightness(0.8);
+}
+

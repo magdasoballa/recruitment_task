@@ -1,0 +1,34 @@
+@import 'colors/global-colors';
+
+
+.result-wrapper{
+  height:120px;
+  width:100%;
+  outline: black;
+  background-color: $color-result-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  align-items: flex-end;
+  padding-right: 20px;
+  .operation{
+    background-color: $color-result-background;
+    border:none;
+    color: #C876A4;
+    font-size:1rem;
+    word-spacing: 15px;
+    text-align: right;
+  }
+  .result{
+    font-size:3rem;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    text-decoration: none;
+  }
+}

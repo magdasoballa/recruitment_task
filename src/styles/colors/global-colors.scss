@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+
+$color-operations-btn:#8547D8;
+$color-equal-btn:#E62F89;
+
+$color-result-background :#212121;
+$color-result-font: #B08D97;
+
+$color-primary-bg: #EE8D7C;
+$color-secondary-bg: #9E5CD6;
+
+$color-button-number-bg: #E4E4E4;
+$color-button-second-number-bg: scale-color($color-button-number-bg, $lightness: 20%);
+$color-button-third-number-bg: scale-color($color-button-number-bg, $lightness: 40%);
+
+
+
+$color-button-operation-bg: #D0D0D0;
+$color-button-second-operation-bg: scale-color($color-button-operation-bg, $lightness: 20%);
+$color-button-third-operation-bg: scale-color($color-button-operation-bg, $lightness: 40%);

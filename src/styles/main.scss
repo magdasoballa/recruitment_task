@@ -1,0 +1,28 @@
+@import 'colors/global-colors';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(-90deg, $color-primary-bg, $color-secondary-bg);
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  .calculator-wrapper {
+    width: 280px;
+    height: 450px;
+  }
+}
+
